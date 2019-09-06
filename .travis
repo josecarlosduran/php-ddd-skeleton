@@ -9,7 +9,7 @@ php:
 before_script:
   - make build
 
-script: make test
+script: /vendor/bin/phpunit --exclude-group='disabled' --log-junit build/test_results/phpunit/junit.xml tests
 
 notifications:
     email:
