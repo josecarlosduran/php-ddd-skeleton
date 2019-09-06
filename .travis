@@ -1,9 +1,10 @@
 language: php
+services:
+  - docker
 
 php:
   - 7.3
-services:
-  - docker
+
 
 before_script:
   - make build
